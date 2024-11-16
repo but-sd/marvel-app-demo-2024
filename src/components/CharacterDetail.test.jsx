@@ -32,8 +32,8 @@ test('does not render the character thumbnail image when not provided', () => {
     expect(imageElement).not.toBeInTheDocument();
 });
 
-// test('renders "no character" when character is not provided', () => {
-//     render(<CharacterDetail />);
-//     const noCharacterElement = screen.getByText('No character');
-//     expect(noCharacterElement).toBeInTheDocument();
-// });
+test('renders "no character" when character is not provided', () => {
+    render(<CharacterDetail />);
+    const noCharacterElement = screen.getByText('No character');
+    expect(noCharacterElement).toBeInTheDocument();
+});
