@@ -49,7 +49,7 @@ describe('CharactersPage', () => {
         expect(captainAmericaElement).toBeInTheDocument();
 
         // expect the number of characters to be in the document
-        const numberOfCharactersElement = screen.getByText(`There is ${characters.length} characters`);
+        const numberOfCharactersElement = screen.getByText(`There are ${characters.length} characters`);
         expect(numberOfCharactersElement).toBeInTheDocument();
     });
 
@@ -65,7 +65,7 @@ describe('CharactersPage', () => {
             </MemoryRouter>
         );
 
-        screen.debug()
+        // screen.debug()
 
         // expect the order to be the same as the search params
         const orderBySelectElement = screen.getByTestId('orderBy');
